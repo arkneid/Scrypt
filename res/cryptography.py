@@ -36,7 +36,7 @@ class Encryption:
                 for item in glob.glob(f'{folder}\\**\\*', recursive=True):
                     if os.path.isfile(item):
                         file = item.replace(".encrypted", "")
-                        pyAesCrypt.encryptFile(infile=item, outfile=file, passw=self.PASS)
+                        pyAesCrypt.decryptFile(infile=item, outfile=file, passw=self.PASS)
                         os.remove(item)
             else:
                 for item in glob.glob(f'{folder}/**/*', recursive=True):
