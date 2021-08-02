@@ -8,10 +8,10 @@ It can be used in **CTF's** in order to ensure that you can win the competition 
 
 # Usage
 ## Encrypt
-`python3 Scrypt.py -m encrypt -f {full_path_folder}`
+`python3 Scrypt.py -m encrypt -f {full_path_folder} -p {password_to_crypt_decrypt}`
 
 ## Decrypt
-`python3 Scrypt.py -m decrypt -f {full_path_folder}`
+`python3 Scrypt.py -m decrypt -f {full_path_folder} -p {password_to_crypt_decrypt}`
 
 ## Help
 `python3 Scrypt.py -h`
