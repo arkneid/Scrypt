@@ -13,7 +13,6 @@ import platform
 from res.cryptography import Encryption
 
 # Vars
-PROXY = "http://proxy.multicert.inet:8080"
 HASH = "NVZNfGwjZGhJelQ0JFpVejlVMUIK"
 SYSTEM = platform.system()
 

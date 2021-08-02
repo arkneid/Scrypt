@@ -7,7 +7,6 @@
 import glob
 import os
 import pyAesCrypt
-from res.teams import Teams
 
 
 class Encryption:
@@ -30,8 +29,6 @@ class Encryption:
                         file_encrypt = item + ".encrypted"
                         pyAesCrypt.encryptFile(infile=item, outfile=file_encrypt, passw=self.PASS)
                         os.remove(item)
-            msg_teams = Teams(text=f"Files of the folder {folder} were encrypted!!!", title=f"{folder} Encrypted")
-            msg_teams.send_teams_message()
 
     def decrypt(self):
         for folder in self.folders_to_encrypt:
@@ -47,5 +44,3 @@ class Encryption:
                         file = item.replace(".encrypted", "")
                         pyAesCrypt.encryptFile(infile=item, outfile=file, passw=self.PASS)
                         os.remove(item)
-            msg_teams = Teams(text=f"Files of the folder {folder} were decrypted!!!", title=f"{folder} Decrypted")
-            msg_teams.send_teams_message()
