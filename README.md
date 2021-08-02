@@ -8,12 +8,13 @@ This tool can be used in **CTF's** in order to ensure that you can win the compe
 
 # Usage
 ## Encrypt
-`python3 Scrypt.py -m encrypt`
+`python3 Scrypt.py -m encrypt -f {full_path_folder}`
 
 ## Decrypt
-`python3 Scrypt.py -m decrypt`
+`python3 Scrypt.py -m decrypt -f {full_path_folder}`
 
-
+## Help
+`python3 Scrypt.py -h`
 
 
 ### NOTE

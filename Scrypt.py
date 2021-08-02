@@ -27,7 +27,8 @@ def main():
     mode = options.method
     mode.lower()
     folder = options.folder
-    folders_to_encrypt = folder.replace("\\", "\\\\")
+    folders = folder.replace("\\", "\\\\")
+    folders_to_encrypt = [f"{folders}"]
 
     # Decode Password
     password_encode = HASH.encode('ascii')
@@ -43,6 +44,7 @@ def main():
             decrypt.decrypt()
         else:
             print("Wrong Choice!!!")
+
 
 if __name__ == "__main__":
     main()
