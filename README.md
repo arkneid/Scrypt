@@ -2,7 +2,7 @@
 ## Scrypt is meant to education proposes only!!!!!
 
 The **Scrypt** tool allow you to encrypt or decrypt files from any pc, beware that if any anti-virus software is present it will block the actions that this tool perform.
-This tool can be used in **CTF's** in order to ensure that you can win the competition by encrypting important files that are necessary to allow access.
+It can be used in **CTF's** in order to ensure that you can win the competition by encrypting important files that are necessary to allow access.
 
 
 
