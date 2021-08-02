@@ -27,8 +27,12 @@ def main():
     mode = options.method
     mode.lower()
     folder = options.folder
-    folders = folder.replace("\\", "\\\\")
-    folders_to_encrypt = [f"{folders}"]
+
+    if SYSTEM.lower() == "windows":
+        folders = folder.replace("\\", "\\\\")
+        folders_to_encrypt = [f"{folders}"]
+    else:
+        folders_to_encrypt = [f"{folder}"]
 
     # Decode Password
     password_encode = HASH.encode('ascii')
