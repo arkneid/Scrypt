@@ -6,9 +6,7 @@
 #########################
 
 # imports
-import os
 import optparse
-import base64
 import platform
 from res.cryptography import Encryption
 
